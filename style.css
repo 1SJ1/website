@@ -1,0 +1,279 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela', sans-serif;
+}
+.hero{
+    height: 100vh;
+    backgroxund:radial-gradient(black, rgba(0, 0, 0, 0.55));
+    
+}
+body{
+    background:radial-gradient(rgb(254, 253, 253), rgba(0, 0, 0, 0.589));
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+.logo{
+    color:black;
+    font-weight: 600;
+}
+.ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    
+}
+.login{
+    padding: 10px 35px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.402);
+    border: none;
+   
+}
+.login a{
+    color: aliceblue;
+}
+.nav li{
+    padding: 10px;
+}
+.fheading{
+    width: 450px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+h1{
+    font-size: 50px;
+    color: aliceblue;
+}
+.b2{
+    padding: 10px 35px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.buttons{
+    padding-left: 100px;
+    margin-top: 50px;
+}
+img{
+    object-fit: cover;
+}
+.sofa img{
+    width: 600px;
+    margin-top: -250px;
+}
+.sofa{
+    display: flex;
+    justify-content: center;
+}
+.frames img{
+    width: 500px;
+
+}
+.frames{
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+.lamp{
+    top: 0;
+    position: absolute;
+    left: 450px;
+}
+
+.lamp img{
+    width: 250px;
+}
+.nav li a{
+    color: black;
+}
+.fheading h1{
+    color: black;
+}
+.why{
+    width: 300px;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+.whyy{
+    font-weight: 900;
+    font-size: 30px;
+}
+.town{
+    width: 250px;
+    margin-left: 100px;
+    padding-top: 70px;
+}
+.dd{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+}
+.pictures{
+    display: flex;
+    width: 850px;
+    position: absolute;
+    right: 0;
+    top: 800px;
+    justify-content: space-between;
+}
+.pictures img{
+    height: 350px;
+    width: 250px;
+    border-radius: 30px;
+
+    
+}
+.pic1{
+    height: 450px;
+    width: 250px;
+    transition: .4s;
+}
+.pic2{
+    height: 450px;
+    width: 250px;
+    transition: .4s;
+}
+.pic3{
+    height: 450px;
+    width: 250px;
+    transition: .4s;
+}
+.pic1 p{
+    font-weight: 600;
+    padding-left: 70px;
+    padding-top: 2px;
+}
+.pic2 p{
+    font-weight: 600;
+    padding-left: 70px;
+    padding-top: 2px;
+}
+.pic3 p{
+    font-weight: 600;
+    padding-left: 70px;
+    padding-top: 2px;
+}
+.words {
+    font-weight: 600;
+    padding-left: 70px;
+    padding-top: 2px;
+}
+.price{
+    font-weight: 900;
+}
+.pic1:hover{
+    height: 450px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.100);
+    transition: .2s;
+    border-radius: 30px;
+    top: 1px;
+    position: relative;
+}
+.pic2:hover{
+    height: 450px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.100);
+    transition: .2s;
+    border-radius: 30px;
+    top: 1px;
+    position: relative;
+}
+.pic3:hover{
+    height: 450px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.100);
+    transition: .2s;
+    border-radius: 30px;
+    top: 1px;
+    position: relative;
+}
+button:hover{
+    background-color: bisque;
+    transition: .2s;
+    color: black;
+}
+.circ{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.285);
+    border-radius: 50px;
+    left: 200px;
+    top: 70px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.circ:hover{
+    background-color: blanchedalmond;
+    transition: .2s;
+}
+.menu{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .frames{
+        display: none;
+    }  
+    .ul{
+        display: block;
+        background-color: rgba(127, 255, 212, 0.342);
+        border-bottom-left-radius:30px ;
+        border-bottom-right-radius:30px ;
+        position: absolute;
+        right: 50px;
+        top: 60px;
+        display: none;
+        transition: .5s;
+    } 
+    .lamp{
+        left: 30%;
+    } 
+    .menu{
+        display: block ;
+
+    }
+    .ul.open{
+        display: block;
+    }
+    .sofa{
+        margin-top: 90px;
+    }
+    .pictures{
+        display: flex;
+        position: relative;
+        top: 100px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .town{
+        position: relative;
+        width: 10
+    }
+        
+}
